@@ -1,16 +1,17 @@
 import React from "react";
+import { Component } from "react";
 import NotesList from '../src/components/NotesList'
-function App() {
-  return (
-    <section>
-      <form>
-        <input type='text' placeholder='Title'/>
-        <textarea placeholder='Write something here...'/>
-        <button>Send</button>
-      </form>
-      <NotesList/>
-    </section>
-  );
+import Form from "./components/Form";
+
+class App extends Component{
+  render(){
+      return (
+      <section>
+        <Form/>
+        <NotesList/>
+      </section>
+    );
+  }
 }
 
 export default App;

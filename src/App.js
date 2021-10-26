@@ -1,8 +1,15 @@
 import React from "react";
-
+import NotesList from '../src/components/NotesList'
 function App() {
   return (
-    <h1>React Listex</h1>
+    <section>
+      <form>
+        <input type='text' placeholder='Title'/>
+        <textarea placeholder='Write something here...'/>
+        <button>Send</button>
+      </form>
+      <NotesList/>
+    </section>
   );
 }
 

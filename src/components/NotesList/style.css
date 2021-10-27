@@ -1,0 +1,12 @@
+.list-notes{
+    display: flex;
+    flex:1;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    flex-wrap: wrap;
+}
+
+.list-notes_item{
+    margin-top: 20px;
+    width: 33%;
+}

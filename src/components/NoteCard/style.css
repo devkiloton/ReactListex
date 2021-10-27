@@ -8,6 +8,12 @@
     border-radius: 15px;
     flex-wrap: wrap;
     padding:16px;
+    margin: 10px;
+    transition: 0.7s transform;
+}
+
+.note-card:hover{
+    transform: scale(1.1);
 }
 
 .note-card_header{

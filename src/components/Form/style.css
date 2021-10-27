@@ -45,6 +45,7 @@
     width: 20%;
     height: 30px;
     align-self: center;
+    transition: 0.7s background-color, color;
 }
 .form-note button:hover{
     background-color: rgb(138, 199, 138);

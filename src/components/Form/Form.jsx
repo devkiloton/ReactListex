@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import { Component } from "react";
 import './style.css'
 export default class Form extends Component{

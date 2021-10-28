@@ -7,13 +7,19 @@ class App extends Component{
 
   constructor(){
     super();
-    this.notes = [];
+    this.state = {
+      notes:[]
+    };
   }
 
   createNote(title, text)
   {
     const newNote = {title, text};
-    this.notes.push(newNote);
+    const newNotesArray = [...this.state.notes, newNote]
+    const newState ={
+      notes:newNotesArray 
+    }
+    this.setState(newState)
   }
   
   render(){
@@ -21,7 +27,7 @@ class App extends Component{
       return (
       <section className='container-app'>
         <Form createNote={this.createNote.bind(this)}/>
-        <NotesList notes={this.notes}/>
+        <NotesList notes={this.state.notes}/>
       </section>
     );
   }

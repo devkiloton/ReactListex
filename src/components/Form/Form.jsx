@@ -3,8 +3,8 @@ import { Component } from "react";
 import './style.css'
 export default class Form extends Component{
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.title='';
         this.text='';
     }
@@ -22,6 +22,7 @@ export default class Form extends Component{
     _createNote(event){
         event.preventDefault();
         event.stopPropagation();
+        this.props.createNote(this.title, this.text)
     }
 
     render(){

@@ -3,13 +3,14 @@
     flex:1;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-image: linear-gradient(to left, rgb(40, 40, 40) , rgb(70, 70, 70));
     border-radius: 15px;
     flex-wrap: wrap;
     padding:16px;
     margin: 10px;
     transition: 0.7s transform;
+    height: 120px;
 }
 
 .note-card:hover{
@@ -25,6 +26,8 @@
 }
 
 .note-card_text{
+    display: flex;
+    flex: 1;
     width: 100%;
     margin-top: 15px;
     font-size: 1em;
@@ -38,6 +41,24 @@
     font-size: medium;
     font-family:Arial, Helvetica, sans-serif;
 }
+
+.note-card_text::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+  }
+  
+  .note-card_text::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  .note-card_text::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90);
+    border-radius: 10px;
+  }
+
+  .note-card_text::-webkit-scrollbar-thumb:hover {
+    background: rgba(90, 90, 90);
+  }
 
 .note-card_title {
     font-size: 1.2em;

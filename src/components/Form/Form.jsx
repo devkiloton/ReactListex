@@ -31,11 +31,12 @@ export default class Form extends Component{
             onSubmit={this._createNote.bind(this)} 
             className='form-note'>
             <input 
+                maxLength='12'
                 type='text' 
-                placeholder='Title'
+                placeholder='Title (12 characters)'
                 onChange={this._handleChangeTitle.bind(this)}
                 />
-            <textarea 
+            <textarea
                 placeholder='Write something here...'
                 onChange={this._handleChangeText.bind(this)}
                 />

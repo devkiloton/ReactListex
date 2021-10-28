@@ -1,7 +1,7 @@
 .form-note{
     display: flex;
     flex-direction: column;
-    height: 185px;
+    height: 285px;
     width: 30%;
     justify-content: space-between;
     margin: 20px 20px 0px 20px;
@@ -27,7 +27,7 @@
     background-size: 102%;
     background-position-x: center;
     border-color: transparent;
-    height: 70px;
+    height: 170px;
     padding: 10px 10px;
     resize: none;
     font-size: medium;
@@ -36,6 +36,24 @@
     outline: none !important;
     border-color: transparent;
 }
+
+.form-note textarea::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+  }
+
+  .form-note textarea::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+
+  .form-note textarea::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90);
+    border-radius: 10px;
+  }
+  
+  .form-note textarea::-webkit-scrollbar-thumb:hover {
+    background: rgba(90, 90, 90);
+  }
 
 .form-note button{
     border-radius: 9px;

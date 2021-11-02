@@ -3,6 +3,8 @@ import { Component } from "react";
 import NotesList from './components/NotesList'
 import Form from "./components/Form";
 import './components/assets/app.css'
+import CategoriesList from "./components/CategoriesList";
+
 class App extends Component{
 
   constructor(){
@@ -34,10 +36,13 @@ class App extends Component{
       return (
       <section className='container-app'>
         <Form createNote={this.createNote.bind(this)}/>
-        <NotesList 
-          notes={this.state.notes}
-          deleteNote={this.deleteNote.bind(this)}
-        />
+        <main className='container-app_main'>
+          <CategoriesList/>
+          <NotesList 
+            notes={this.state.notes}
+            deleteNote={this.deleteNote.bind(this)}
+          />
+        </main>
       </section>
     );
   }

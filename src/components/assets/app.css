@@ -2,7 +2,11 @@
     display: flex;
     flex:1;
 }
-
+.container-app_main{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 ::-webkit-scrollbar {
     width: 10px;
     border-radius: 10px;

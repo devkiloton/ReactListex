@@ -10,7 +10,8 @@ class App extends Component{
   constructor(){
     super();
     this.state = {
-      notes:[]
+      notes:[],
+      categories:['Work', 'Sports'],
     };
   }
 
@@ -37,7 +38,7 @@ class App extends Component{
       <section className='container-app'>
         <Form createNote={this.createNote.bind(this)}/>
         <main className='container-app_main'>
-          <CategoriesList/>
+          <CategoriesList categories={this.state.categories}/>
           <NotesList 
             notes={this.state.notes}
             deleteNote={this.deleteNote.bind(this)}

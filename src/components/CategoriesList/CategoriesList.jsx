@@ -4,13 +4,13 @@ import './style.css'
 export default class CategoriesList extends Component{
     render(){
         return(
-            <section>
-                <ul>
-                    <li>A</li>
-                    <li>B</li>
-                    <li>c</li>
+            <section className='container'>
+                <ul className='list'>
+                    <li>sports</li>
+                    <li>i</li>
+                    <li>felcaralho</li>
                 </ul>
-                <input type='text'/>
+                <input className='input' type='text'/>
             </section>
         );
     }

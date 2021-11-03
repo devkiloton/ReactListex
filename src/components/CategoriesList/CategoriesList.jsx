@@ -7,7 +7,8 @@ export default class CategoriesList extends Component{
     {
         if(e.key === 'Enter')
         {
-            console.log('Category added')
+            const categoryValue = e.target.value;
+            this.props.addCategory(categoryValue);
         }
     }
 
@@ -22,7 +23,7 @@ export default class CategoriesList extends Component{
                 </ul>
                 <input 
                     placeholder='Add category' 
-                    className='input' 
+                    className='input'
                     type='text'
                     onKeyUp={this._handleInputEvent.bind(this)}
                 />

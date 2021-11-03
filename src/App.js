@@ -24,6 +24,16 @@ class App extends Component{
     }
     this.setState(newState)
   }
+  
+  addCategory(categoryName)
+  {
+    const newCategoriesArray = [...this.state.categories, categoryName]
+    const newState ={
+      ...this.state,
+      categories:newCategoriesArray
+    }
+    this.setState(newState)
+  }
 
   deleteNote(index)
   {
@@ -38,7 +48,9 @@ class App extends Component{
       <section className='container-app'>
         <Form createNote={this.createNote.bind(this)}/>
         <main className='container-app_main'>
-          <CategoriesList categories={this.state.categories}/>
+          <CategoriesList
+            addCategory={this.addCategory.bind(this)} 
+            categories={this.state.categories}/>
           <NotesList 
             notes={this.state.notes}
             deleteNote={this.deleteNote.bind(this)}

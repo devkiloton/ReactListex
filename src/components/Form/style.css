@@ -1,7 +1,16 @@
+.form-note select{
+  border-color: transparent;
+  background-color: rgb(70, 70, 70);
+  color: rgb(130, 130, 130);
+  border-radius: 7px;
+  padding: 5px;
+  font-size: medium;
+}
+
 .form-note{
     display: flex;
     flex-direction: column;
-    height: 285px;
+    height: 310px;
     width: 30%;
     justify-content: space-between;
     margin: 20px 20px 0px 20px;
@@ -9,9 +18,7 @@
 
 .form-note input{
     border-radius: 10px;
-    background-image: linear-gradient(to left, rgb(40, 40, 40) , rgb(70, 70, 70));
-    background-size: 102%;
-    background-position-x:center;
+    background-color: rgb(70, 70, 70);
     border-color: transparent;
     height: 30px;
     font-size: large;
@@ -23,9 +30,7 @@
 
 .form-note textarea{
     border-radius: 10px;
-    background-image: linear-gradient(to left, rgb(40, 40, 40) , rgb(70, 70, 70));
-    background-size: 102%;
-    background-position-x: center;
+    background-color: rgb(70, 70, 70);
     border-color: transparent;
     height: 170px;
     padding: 10px 10px;

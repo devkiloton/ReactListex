@@ -14,12 +14,12 @@
 
 .list li{
     display: flex;
+    cursor: pointer;
     align-items: center;
     align-self: center;
-    padding: 7px;
+    padding: 10px;
     border-radius: 10px;
-    background-image: linear-gradient(to left, rgb(40, 40, 40) , rgb(70, 70, 70));
-    background-size: 102%;
+    background-color: rgb(70, 70, 70);
     background-position-x:center;
     border-color: transparent;
     font-size: large;
@@ -30,11 +30,10 @@
 
 .input{
     border-radius: 10px;
-    background-image: linear-gradient(to left, rgb(40, 40, 40) , rgb(70, 70, 70));
-    background-size: 102%;
-    background-position-x:center;
+    background-color: rgb(70, 70, 70);
     border-color: transparent;
     height: 30px;
+    width: 350px;
     font-size: large;
     padding-left: 10px;
     color: rgb(190, 190, 190);

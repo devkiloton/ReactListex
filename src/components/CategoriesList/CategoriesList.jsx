@@ -22,7 +22,7 @@ export default class CategoriesList extends Component{
                     })}
                 </ul>
                 <input 
-                    placeholder='Add category' 
+                    placeholder='Create a category here and press enter...' 
                     className='input'
                     type='text'
                     onKeyUp={this._handleInputEvent.bind(this)}

@@ -11,13 +11,13 @@ class App extends Component{
     super();
     this.state = {
       notes:[],
-      categories:['Work', 'Sports'],
+      categories:[],
     };
   }
 
-  createNote(title, text)
+  createNote(title, text, category)
   {
-    const newNote = {title, text};
+    const newNote = {title, text, category};
     const newNotesArray = [...this.state.notes, newNote]
     const newState ={
       notes:newNotesArray 
@@ -46,11 +46,13 @@ class App extends Component{
 
       return (
       <section className='container-app'>
-        <Form createNote={this.createNote.bind(this)}/>
+        <Form
+          categories={this.state.categories} 
+          createNote={this.createNote.bind(this)}/>
         <main className='container-app_main'>
           <CategoriesList
-            addCategory={this.addCategory.bind(this)} 
-            categories={this.state.categories}/>
+            categories={this.state.categories}
+            addCategory={this.addCategory.bind(this)}/>
           <NotesList 
             notes={this.state.notes}
             deleteNote={this.deleteNote.bind(this)}

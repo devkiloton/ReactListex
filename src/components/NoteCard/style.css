@@ -13,6 +13,12 @@
     height: 120px;
 }
 
+.note-card h4{
+  color: rgb(190, 190, 190);
+  font-weight: bold;
+  padding: 3px;
+}
+
 .note-card:hover{
     transform: scale(1.1);
 }

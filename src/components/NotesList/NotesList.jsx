@@ -14,7 +14,8 @@ export default class NotesLists extends Component{
                         deleteNote={this.props.deleteNote} 
                         title={notes.title} 
                         text={notes.text}
-                        arrayIndex={index}    
+                        arrayIndex={index}
+                        category={notes.category} 
                     />
                 </li>
             )

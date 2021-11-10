@@ -18,6 +18,7 @@ export default class NoteCard extends Component{
                     <ExcludeButton className='note-card_cursor' onClick={this.deleteNote.bind(this)}/>
                 </header>
                 <textarea defaultValue={this.props.text} className='note-card_text'/>
+                <h4>{this.props.category}</h4>
             </section>
         )
     }
